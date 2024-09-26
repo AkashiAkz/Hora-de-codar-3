@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var valores = []
+    var soma = 0
+
+    for (var i = 0; i < 6; i++) {
+        var valor = parseFloat(prompt("Deixe sua avaliação " + (i + 1) + " (entre 0 e 10):"));
+        while (valor < 0 || valor > 10) {
+            alert("Valores invalidos. Tente novamente");
+            valor = parseFloat(prompt("Deixe sua avaliação " + (i + 1) + " (entre 0 e 10):"));
+        }
+        valores.push(valor);
+        soma += valor
+    }
+    var media = soma / 6
+    var mensagem = "Valores informados: " + valores.join(", ") + "\n";
+    mensagem += "Média das avaliações: " + media.toFixed(2);
+    alert(mensagem);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

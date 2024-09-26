@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function decrescente (){
+            let contador = 10
+
+            const intervalo = setInterval (()=> {
+                document.write(contador + "<strong>" + "<br>");
+                contador--;
+
+
+                if (contador < 1){
+                    clearInterval(intervalo);
+                    document.write("Eu te amo e vou casar contigo pode ter certeza disso. Você é a coisa mais especial da minha vida <3" + "<img src=https://i.pinimg.com/736x/02/8f/ac/028fac670a4101695f0d9ccecd42fed6.jpg>" )
+                }
+            }, 1000)
+        }
+
+        decrescente()
+
+    </script>
+</head>
+<body> 
+    
+</body>
+</html>

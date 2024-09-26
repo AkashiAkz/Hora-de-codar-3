@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function decrescente (){
+            let contador = 10
+
+            const intervalo = setInterval (()=> {
+                document.write(contador + "<strong>" + "<br>");
+                contador--;
+
+
+                if (contador < 1){
+                    clearInterval(intervalo);
+                    document.write("Você é lindo")
+                }
+            }, 1000)
+        }
+
+        decrescente()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

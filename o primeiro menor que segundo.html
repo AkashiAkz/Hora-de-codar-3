@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mediaAritmeticaEntreNumeros(num1, num2) {
+            let soma = 0;
+            let contador = 0;
+
+            for (let i = num1; i <= num2; i++) {
+                soma += i;
+                contador++;
+            }
+
+            const media = soma / contador;
+            return media;
+        }
+        const primeiroNumero = parseInt(prompt("Informe o primeiro número (menor):"));
+        const segundoNumero = parseInt(prompt("Informe o segundo número (maior):"));
+
+        if (primeiroNumero < segundoNumero) {
+            const resultado = mediaAritmeticaEntreNumeros(primeiroNumero, segundoNumero);
+            document.write("A média aritmética dos números entre ", primeiroNumero, " e ", segundoNumero, " é: ", resultado);
+        } else {
+            document.write("O primeiro número deve ser menor que o segundo.");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function mediaAritmetica(inicio, fim){
+            let soma = 0;
+            let contador = 0;
+
+            for (let i = inicio; i <= fim; i++){
+                soma += i;
+                contador++;
+            }
+            const media = soma / contador;
+            return media;
+        }
+
+        const resultado = mediaAritmetica(15, 100);
+        document.write("A média aritmética dos numeros entre 15 e 100 é: " + resultado);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

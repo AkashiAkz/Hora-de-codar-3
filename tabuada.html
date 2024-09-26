@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuadas de 1 a N</title>
+    <script>
+        // Função para gerar todas as tabuadas de 1 até N
+        function gerarTabuadas() {
+            // Captura o valor de N informado pelo usuário
+            var N = parseInt(prompt("Digite o valor de N para gerar as tabuadas de 1 até N:"));
+            
+            // Verifica se N é um número válido
+            if (isNaN(N) || N <= 0) {
+                alert("Por favor, digite um número válido maior que 0.");
+                return;
+            }
+            
+            // Loop externo para gerar a tabuada de cada número de 1 até N
+            for (let i = 1; i <= N; i++) {
+                document.write("<h3>Tabuada do " + i + ":</h3>");
+                // Loop interno para multiplicar o número i por 1 até 10
+                for (let j = 1; j <= 10; j++) {
+                    document.write(i + " x " + j + " = " + (i * j) + "<br>");
+                }
+                document.write("<br>"); // Pula uma linha entre cada tabuada
+            }
+        }
+    </script>
+</head>
+<body onload="gerarTabuadas()"> <!-- Chama a função assim que a página carregar -->
+</body>
+</html>

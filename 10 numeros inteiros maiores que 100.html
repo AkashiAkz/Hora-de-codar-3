@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var comecar = parseFloat(prompt("Deseja começar? 1- sim | 2- não"));
+        let contador = 101;
+
+        while (comecar === 2) {
+            alert("Boa, agora tenta de novo");
+            comecar = parseFloat(prompt("Deseja começar? 1- sim | 2- não"));
+        }
+
+
+        if (comecar === 1) {
+            const intervalo = setInterval(() => {
+                document.write(contador + "<strong><br></strong>");
+                contador++;
+
+    
+                if (contador > 110) {
+                    clearInterval(intervalo);
+                }
+            }, 1000);
+        } else {
+            alert("Opção inválida. A página será recarregada.");
+            location.reload(); 
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
